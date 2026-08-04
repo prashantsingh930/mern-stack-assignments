@@ -1,16 +1,35 @@
-# React + Vite
+# React Card Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project demonstrates a reusable React Card component that displays image information using props. The card data is stored in an array of objects and rendered dynamically using the `map()` function. The cards are styled with Tailwind CSS and include a gradient border.
 
-Currently, two official plugins are available:
+## Features
+- Reusable Card component
+- Dynamic rendering using an array of objects
+- Props-based data passing
+- Responsive grid layout
+- Gradient border using Tailwind CSS
+- Clean and simple UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
+- React.js
+- JavaScript (ES6)
+- Tailwind CSS
 
-## React Compiler
+## Implementation Details
+- Created a reusable `Card` component that accepts image source, card number, and description as props.
+- Stored all card details in an array of objects.
+- Used the `map()` function to render cards dynamically.
+- Applied Tailwind CSS utility classes for styling and layout.
+- Added a gradient border around each card using a wrapper with a gradient background.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Testing
+The application was tested in the browser to verify:
+- Cards render correctly from the array.
+- Props display the correct information.
+- Gradient borders appear correctly.
+- Three cards are displayed per row.
+- Images and descriptions are aligned properly.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Author
+Prashant Singh
