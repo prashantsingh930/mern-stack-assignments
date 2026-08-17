@@ -1,35 +1,40 @@
-# React Card Component
+# Task 28 – React Router Application
 
-## Overview
-This project demonstrates a reusable React Card component that displays image information using props. The card data is stored in an array of objects and rendered dynamically using the `map()` function. The cards are styled with Tailwind CSS and include a gradient border.
+A simple React application built using **React.js** and **React Router DOM**. The project demonstrates component-based development, routing, and reusable layouts.
 
 ## Features
-- Reusable Card component
-- Dynamic rendering using an array of objects
-- Props-based data passing
-- Responsive grid layout
-- Gradient border using Tailwind CSS
-- Clean and simple UI
+
+* React component-based structure
+* Client-side routing using React Router
+* Reusable Header and Footer components
+* Common Layout with `<Outlet />`
+* Separate pages for Home, Login, Register, and Main
+* Organized project structure
+
+## Routes
+
+* `/` – Home
+* `/login` – Login
+* `/register` – Register
+* `/main` – Main
 
 ## Technologies Used
-- React.js
-- JavaScript (ES6)
-- Tailwind CSS
 
-## Implementation Details
-- Created a reusable `Card` component that accepts image source, card number, and description as props.
-- Stored all card details in an array of objects.
-- Used the `map()` function to render cards dynamically.
-- Applied Tailwind CSS utility classes for styling and layout.
-- Added a gradient border around each card using a wrapper with a gradient background.
+* React.js
+* React Router DOM
+* JavaScript (JSX)
+* Vite
+* CSS
 
-## Testing
-The application was tested in the browser to verify:
-- Cards render correctly from the array.
-- Props display the correct information.
-- Gradient borders appear correctly.
-- Three cards are displayed per row.
-- Images and descriptions are aligned properly.
+## How to Run
 
-## Author
-Prashant Singh
+```bash
+npm install
+npm run dev
+```
+
+The project will start on the local development server provided by Vite.
+
+## Project Structure
+
+The application follows a modular structure where pages and reusable components are separated into their respective folders, making the project easier to maintain and extend.
