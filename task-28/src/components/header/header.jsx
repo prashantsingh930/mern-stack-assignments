@@ -10,7 +10,7 @@ const Header = () => {
             <img
               className='w-20'
               src={
-                "https://scontent.cdninstagram.com/v/t51.82787-19/534328043_17844181797555787_4618783143570821934_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=rJxGXa4_Dl4Q7kNvwEIX6Im&_nc_oc=AdrakRT2kFL_-cKgBB-Wz0PogCeUhF9Wmp3LufBVZd1raE6hpyekMb9r954xrsPhCSo&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=gda_sx6w4bLYDy8vlVktRg&_nc_ss=7ba8c&oh=00_AQEscwix6AP7pkwLEDgulK_FLJViTyv_GsabaqEaPcTNiA&oe=6A7BA4D6"
+                "https://blobcdn.same.energy/a/33/f5/33f53e20823c0de238580848e4cca784a6780a3d"
               }
             ></img>
           </NavLink>
