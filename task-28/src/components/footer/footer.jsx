@@ -9,7 +9,7 @@ const Footer = () => {
 
         <NavLink
           className='bg-[#4b5562] h-8 p-1 px-2 m-1 text-rose-100  font-semibold'
-          to={"/register"}
+          to={"/signup"}
         >
           Register For Free
         </NavLink>

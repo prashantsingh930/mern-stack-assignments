@@ -8,15 +8,24 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
-import { Home, Login, Main, Footer, Register, Layout } from "./index.jsx";
+import {
+  Home,
+  Login,
+  Dashboard,
+  Footer,
+  Register,
+  Layout,
+  NotFound,
+} from "./index.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='login' element={<Login />} />
-      <Route path='register' element={<Register />} />
-      <Route path='main' element={<Main />} />
+      <Route path='signup' element={<Register />} />
+      <Route path='dashboard' element={<Dashboard />} />
+      <Route path='*' element={<NotFound />} />
     </Route>,
   ),
 );

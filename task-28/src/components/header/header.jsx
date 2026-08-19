@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <div className='bg-[#000] justify-between px-4 py-2 flex flex-row div'>
         <span className='logo'>
-          <NavLink>
+          <NavLink to={"/"}>
             <img
               className='w-20'
               src={
@@ -15,7 +15,7 @@ const Header = () => {
             ></img>
           </NavLink>
         </span>
-        <NavLink className='text-rose-100 mt-5 font-semibold' to={"/main"}>
+        <NavLink className='text-rose-100 mt-5 font-semibold' to={"/dashboard"}>
           Home
         </NavLink>
         <span className='gap-5 p-2 justify-evenly mt-5'>
@@ -27,7 +27,7 @@ const Header = () => {
           </NavLink>
           <NavLink
             className='bg-green-600 h-8 p-2 m-1 text-rose-100 font-semibold'
-            to={"/register"}
+            to={"/signup"}
           >
             Sign-up
           </NavLink>
