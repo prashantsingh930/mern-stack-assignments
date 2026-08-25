@@ -39,21 +39,19 @@ const tags = [
 function Dashboard() {
   return (
     <div className='min-h-screen bg-gray-100 p-4'>
-      <div className='mx-auto grid max-w-7xl grid-cols-3 gap-6'>
-        {/* Left Side */}
+      <div className='mx-auto grid grid-cols-3 gap-6'>
         <aside className='col-span-1'>
-          {/* About */}
-          <div className='mb-6 bg-white shadow'>
+          <div className='mb-6 bg-white '>
             <img
               src='https://images.unsplash.com/photo-1559311648-addd6af95dd4?w=600&auto=format&fit=crop&q=60'
               alt='About'
-              className='h-56 w-full object-cover'
+              className='h-56 w-full'
             />
 
             <div className='p-5'>
               <h2 className='mb-3 text-xl font-bold'>My Name</h2>
 
-              <p className='text-sm leading-6 text-gray-700'>
+              <p className='text-sm'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
                 tempora sed reiciendis minima placeat a eaque eos dicta mollitia
                 illo.
@@ -61,21 +59,15 @@ function Dashboard() {
             </div>
           </div>
 
-          {/* Popular Posts */}
           <div className='mb-6 bg-white shadow'>
-            <h2 className='border-b p-4 text-lg font-semibold'>
-              Popular Posts
-            </h2>
+            <h2 className='border p-4 text-lg font-semibold'>Popular Posts</h2>
 
             {posts.map((post) => (
-              <div
-                key={post.title}
-                className='flex gap-4 border-b p-4 hover:bg-gray-50'
-              >
+              <div key={post.title} className='flex gap-4 border p-4'>
                 <img
                   src='https://images.pexels.com/photos/3791583/pexels-photo-3791583.jpeg'
                   alt={post.title}
-                  className='h-12 w-16 object-cover'
+                  className='h-12 w-16'
                 />
 
                 <div>
@@ -87,15 +79,14 @@ function Dashboard() {
             ))}
           </div>
 
-          {/* Tags */}
-          <div className='bg-white shadow'>
+          <div className='bg-white'>
             <h2 className='border-b p-4 text-lg font-semibold'>Tags</h2>
 
             <div className='flex flex-wrap gap-2 p-5'>
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className='bg-black px-2 py-1 text-xs text-white hover:bg-gray-700'
+                  className='bg-black px-2 py-1 text-xs text-white'
                 >
                   {tag}
                 </span>
@@ -104,7 +95,6 @@ function Dashboard() {
           </div>
         </aside>
 
-        {/* Main Content */}
         <main className='col-span-2'>
           <article className='bg-white shadow'>
             <img
@@ -117,10 +107,10 @@ function Dashboard() {
               <h1 className='mb-2 text-2xl font-bold'>Title Heading</h1>
 
               <p className='mb-5 text-sm text-gray-600'>
-                Title description, April 7, 2014
+                Title description, April 17, 2026
               </p>
 
-              <p className='mb-6 text-sm leading-6 text-gray-700'>
+              <p className='mb-6 text-sm text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                 rem, rerum odit ratione, vero pariatur quibusdam velit, quasi
                 reprehenderit blanditiis sed libero nihil debitis aliquam
@@ -128,7 +118,7 @@ function Dashboard() {
               </p>
 
               <div className='flex items-center justify-between'>
-                <button className='border px-5 py-2 text-xs font-semibold hover:bg-gray-100'>
+                <button className='border px-5 py-2 text-xs font-semibold'>
                   READ MORE »
                 </button>
 

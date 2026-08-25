@@ -40,23 +40,21 @@ const Home = () => {
   return (
     <div className='min-h-screen bg-gray-100 p-4'>
       <div className='mx-auto grid max-w-7xl grid-cols-3 gap-6'>
-        {/* Main Content */}
         <main className='col-span-2'>
-          <article className='bg-white shadow'>
+          <article className='bg-white'>
             <img
-              className='h-96 w-full object-cover'
+              className='h-96 w-full'
               src='https://static.vecteezy.com/system/resources/thumbnails/056/799/766/small/mont-blanc-reflecting-in-the-cheserys-lake-in-the-french-alps-photo.jpg'
               alt='Blog'
             />
-
             <div className='p-6'>
               <h1 className='mb-2 text-2xl font-bold'>Title Heading</h1>
 
               <p className='mb-5 text-sm text-gray-600'>
-                Title description, April 7, 2014
+                Title description, April 17, 2026
               </p>
 
-              <p className='mb-6 text-sm leading-6 text-gray-700'>
+              <p className='mb-6 text-sm text-gray-700'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
                 rem, rerum odit ratione, vero pariatur quibusdam velit, quasi
                 reprehenderit blanditiis sed libero nihil debitis aliquam
@@ -64,13 +62,12 @@ const Home = () => {
               </p>
 
               <div className='flex items-center justify-between'>
-                <button className='border border-gray-300 px-5 py-2 text-xs font-semibold hover:bg-gray-100'>
+                <button className='border border-gray-300 px-5 py-2 text-xs font-semibold'>
                   Read More »
                 </button>
 
                 <div className='flex items-center gap-2 text-sm text-gray-600'>
                   <span>Comments</span>
-
                   <span className='bg-black px-2 py-1 text-xs text-white'>
                     0
                   </span>
@@ -80,12 +77,10 @@ const Home = () => {
           </article>
         </main>
 
-        {/* Sidebar */}
         <aside className='col-span-1'>
-          {/* About */}
           <section className='mb-6 bg-white shadow'>
             <img
-              className='h-56 w-full object-cover'
+              className='h-56 w-full'
               src='https://images.unsplash.com/photo-1559311648-addd6af95dd4?w=600&auto=format&fit=crop&q=60'
               alt='About me'
             />
@@ -108,10 +103,7 @@ const Home = () => {
             </h2>
 
             {posts.map((post) => (
-              <div
-                key={post.title}
-                className='flex gap-4 border-b p-4 hover:bg-gray-50'
-              >
+              <div key={post.title} className='flex gap-4 border-b p-4 '>
                 <img
                   className='h-12 w-16 object-cover'
                   src='https://images.pexels.com/photos/3791583/pexels-photo-3791583.jpeg'
